@@ -1,0 +1,15 @@
+.links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.active{
+    text-decoration: underline;
+}
+.header-link{
+    margin-right : 10px;
+}
+.left{
+    margin-left: auto;
+}
