@@ -1,0 +1,78 @@
+.flex{
+  display: flex;
+}
+.my-container{
+  max-width: 80%;
+  margin: auto;
+}
+#about{
+  margin-top: 15px;
+  div{
+    div{
+      p{
+        width: 90%;
+      }
+    }
+  }
+  .center{
+    margin-top: 10px;
+  }
+}
+
+.center{
+  text-align: center;
+}
+.justify{
+  text-align: justify;
+  width: 95%;
+}
+.hidden{
+  display: none;
+}
+#root{
+//   background: 
+//   linear-gradient(to right, red, blue), 
+//   url('background-image.jpg');
+// background-blend-mode: multiply;
+}
+
+#products{
+  margin-top: 15px;
+}
+
+p{
+  font-size: 16px;
+}
+
+hr{
+  width: 60%;
+  margin: auto!important;
+  margin-bottom: 15px!important;
+}
+.sites{
+  .flex{
+    margin-bottom: 25px;
+    margin-top: 15px;
+  }
+}
+.mb20{
+  margin-bottom: 50px;
+}
+.techno{
+  font-style: italic;
+  font-size: 14px;
+}
+.gapFlex{
+  gap : 20px;
+}
+.socials{
+  position : sticky;
+  top : 80px;
+  margin-left : 3%;
+  margin-bottom: -165px;
+  display: grid;
+  .logo{
+    width: 40px;
+    margin-bottom: 15px;
+  }
+}

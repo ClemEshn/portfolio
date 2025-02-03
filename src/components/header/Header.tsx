@@ -4,24 +4,24 @@ import './Header.scss'
 export default function Header() {
 
     return (
-        <Navbar className="px-3 bg-body-tertiary">
+        <Navbar className="px-3 bg-body-tertiary sticky-top">
             <NavbarBrand>Clément Eischen</NavbarBrand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="left">
-                    <a href={'#Moi'} className='links header-link text-secondary'>
+                    <a href='#about' className='links header-link  '>
                         A propos
                     </a>
-                    <a href={'#Competences'} className='links header-link text-secondary'>
-                        Compétences
+                    <a href='#products' className='links header-link '>
+                        Services
                     </a>
-                    <a href={'#Projets'} className='links header-link text-secondary'>
+                    <a href='#projects' className='links header-link '>
                         Projets
                     </a>
-                    <a href={'#Contact'} className='links header-link text-secondary'>
+                    <a href='#contact' className='links header-link '>
                         Contact
                     </a>
-                    <a href={'#CV'} className='links header-link text-secondary'>
+                    <a href='/CV_Clement_Eischen.pdf' target="_blank" rel="noopener noreferrer" className='links header-link '>
                         CV
                     </a>
                 </Nav>
