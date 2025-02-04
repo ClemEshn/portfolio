@@ -1,3 +1,5 @@
+$primary : #f8543c;
+$secondary : "";
 .flex{
   display: flex;
 }
@@ -66,6 +68,7 @@ hr{
   gap : 20px;
 }
 .socials{
+  width: 0;
   position : sticky;
   top : 80px;
   margin-left : 3%;
@@ -75,4 +78,22 @@ hr{
     width: 40px;
     margin-bottom: 15px;
   }
+}
+
+.icon-product {
+  height: 100px;
+}
+.fixed-height{
+  height: 24vh;
+}
+.enseignement{
+  margin-top: 50px;
+}
+
+.primary-color{
+  background-color : $primary!important;
+  border-color:$primary!important;
+}
+.btn-contact{
+  background-color: $primary;
 }

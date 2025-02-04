@@ -18,7 +18,7 @@ export default function About(){
                 <img src="/img.jpg"/>
             </div>
             <div className="center">
-                <a href="#contact"><Button className="btn btn-primary">Me contacter</Button></a>
+                <a href="#contact"><Button className="primary-color">Me contacter</Button></a>
             </div>
         </div>
     )

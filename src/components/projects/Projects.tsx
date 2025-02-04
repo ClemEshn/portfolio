@@ -3,9 +3,10 @@ export default function Projects() {
         <div id="projects" className="my-container">
             <h2 className="center">Projets</h2>
             <div className="jukebar flex gapFlex mb20">
-                <img src="https://placehold.co/400x250" alt="Jukebar Project" />
+                <img src="/illustration/jukebar.png" width="400px" height="250" alt="Jukebar project" />
+
                 <div>
-                    <h3>Gestion de soirées - Jukebar</h3>
+                    <h3>Pricing dynamique - Jukebar</h3>
                     <p style={{ marginBottom: 0 }} className="justify">
                         Développement d'une plateforme innovante pour la gestion de soirées thématiques basées sur le principe de la bourse. 
                         Les utilisateurs peuvent sélectionner des boissons, influençant ainsi un pricing dynamique en fonction de la demande. 

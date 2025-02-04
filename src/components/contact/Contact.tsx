@@ -49,7 +49,7 @@ export default function Contact(){
                         <label>Message</label>
                         <textarea name="Message" id="" className="field mess"  placeholder="Entrez votre message" required></textarea>
                     </div>
-                    <button type="submit">Envoyer</button>
+                    <button type="submit" className="btn-contact">Envoyer</button>
                 </form>
             </section>
         </div>
