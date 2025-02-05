@@ -7,6 +7,7 @@ export default function Contact(){
   const onSubmit = async (event : React.FormEvent<HTMLFormElement>) => {
     console.log(event);
     event.preventDefault();
+    result; //remove warning
     setResult("Sending....");
     const formData = new FormData(event.currentTarget);
     console.log([...formData.entries()]);
