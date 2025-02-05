@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./contact.scss";
+import "./Contact.scss";
 import Swal from 'sweetalert2'
 
 export default function Contact(){
