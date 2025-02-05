@@ -127,10 +127,6 @@ hr{
   max-height: 250px;
 }
 
-.fullwidth{
-  width: 100%;
-}
-
 @media only screen and (max-width: 800px) {
   .unflexMobile{
     display: inline;
@@ -160,6 +156,6 @@ hr{
     margin-bottom: 20px;
   }
 }
-// @media only screen and (max-width: 800px) and (min-width: 600px) {
-
-// }
+.nocenter{
+  margin-left: 0;
+}

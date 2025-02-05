@@ -6,7 +6,7 @@ export default function About(){
             <div className="flex unflexMobile">
                 <div>
                     <h1>Clément Eischen</h1>
-                    <h2>Développeur web et formateur</h2>
+                    <h2>Développeur web et formateur à Lyon</h2>
                     <p>👋 Bienvenue sur mon portfolio ! Je suis un développeur web passionné 
                         Diplômé en ingénierie informatique, j'ai à cœur de créer des solutions sur mesure et innovantes. 
                         Avec une expertise en PHP, JavaScript, React, Node.js et bien d'autres, j'ai travaillé sur des 
