@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 export default function About(){
     return (
         <div id="about" className="my-container">
-            <div className="flex">
+            <div className="flex unflexMobile">
                 <div>
                     <h1>Clément Eischen</h1>
                     <h2>Développeur web et formateur</h2>
@@ -15,7 +15,9 @@ export default function About(){
                         mon univers, mes projets et mon savoir-faire.
                     </p>
                 </div>
-                <img src="/img.jpg"/>
+                <div className="center fullwidth">
+                    <img className="img-me" src="/img.jpg"/>
+                </div>
             </div>
             <div className="center">
                 <a href="#contact"><Button className="primary-color">Me contacter</Button></a>

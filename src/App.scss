@@ -27,6 +27,7 @@ $secondary : "";
 .justify{
   text-align: justify;
   width: 95%;
+  margin: auto;
 }
 .hidden{
   display: none;
@@ -43,7 +44,8 @@ $secondary : "";
 }
 
 p{
-  font-size: 16px;
+  font-size: 15px;
+  
 }
 
 hr{
@@ -62,7 +64,7 @@ hr{
 }
 .techno{
   font-style: italic;
-  font-size: 14px;
+  font-size: 13px;
 }
 .gapFlex{
   gap : 20px;
@@ -72,7 +74,7 @@ hr{
   position : sticky;
   top : 80px;
   margin-left : 3%;
-  margin-bottom: -165px;
+  margin-bottom: -200px;
   display: grid;
   .logo{
     width: 40px;
@@ -82,10 +84,11 @@ hr{
 
 .icon-product {
   height: 100px;
+  margin-top: 25px;
 }
-.fixed-height{
-  height: 24vh;
-}
+// .fixed-height{
+//   height: 24vh;
+// }
 .enseignement{
   margin-top: 50px;
 }
@@ -97,3 +100,66 @@ hr{
 .btn-contact{
   background-color: $primary;
 }
+
+.img-me{
+  height: 300px;
+  border-radius: 10px;
+}
+
+#projects, #products{
+  margin-top: 50px;
+  border-radius : 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box-container{
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 98%;
+}
+
+.illu-project{
+  aspect-ratio: 400 / 250;
+  height: auto;
+  width: auto;
+  max-width: 400px;
+  max-height: 250px;
+}
+
+.fullwidth{
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .unflexMobile{
+    display: inline;
+  }
+  .socials{
+    margin-left: 1%;
+  }
+  .my-container{
+    max-width: 85%;
+    margin-left: 10%;
+  }
+  .illu-project{
+    max-width: 350px;
+    margin-bottom: 10px;
+  }
+  .falling-leaves{
+    display: none;
+  }
+  .icon-product{
+    margin-bottom: 30px;
+  }
+  
+}
+.sites, .enseignement{
+  h3{
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+}
+// @media only screen and (max-width: 800px) and (min-width: 600px) {
+
+// }
