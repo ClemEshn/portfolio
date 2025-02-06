@@ -1,40 +1,34 @@
+import { useLanguage } from "../../context/LanguageContext"
+import { apiBody, apiCorps, apiTitle, apiTitre, creationSites, devBody, devCorps, devTitle, devTitre, frontBody, frontCorps, frontTitle, frontTitre, hypBody, hypCorps, hypTitle, hypTitre, webSiteCreation, wpBody, wpCorps, wpTitle, wpTitre } from "./ProductsText";
+
 export default function Products(){
+    const {language} = useLanguage();
     return (
         <div id="products" className="my-container">
             <div className="box-container">
                 <h2 className="hidden">Services</h2>
                 <div className="sites center">
-                    <h3>Création de sites internet</h3>
+                    <h3>{language === "fr" ? creationSites : webSiteCreation}</h3>
                     <div className="flex unflexMobile">
                         <div className="frontend">
-                            <h4>Création du front-end <br/>(Interface utilisateur)</h4>
+                            <h4>{language === "fr" ? frontTitre : frontTitle}</h4>
                             <p className="justify fixed-height">
-                                Donnez vie à votre vision grâce à une interface utilisateur moderne et intuitive. 
-                                Que ce soit pour un site web, une application ou un outil interactif, 
-                                je conçois et développe des interfaces centrées sur l'expérience utilisateur. 
-                                Utilisant les technologies en vogue comme React, 
-                                je m’assure que vos projets soient esthétiques, performants et parfaitement adaptés à vos besoins.
+                                {language === "fr" ? frontCorps : frontBody}
                             </p>
                             <img className="icon-product" src="/illustration/frontend.svg"/>
 
                         </div>
                         <div className="backend">
-                            <h4>Développement d’API et solutions sur mesure</h4>
+                            <h4>{language === "fr" ? apiTitre : apiTitle}</h4>
                             <p className="justify fixed-height">
-                                Connectez vos systèmes et automatisez vos processus grâce à des API robustes et sécurisées.
-                                J’assure la conception et le développement d’API REST ou GraphQL, adaptées à vos flux de données.
-                                Que vous ayez besoin d'une intégration complexe ou d'une solution personnalisée,
-                                je m'engage à créer des architectures fiables et évolutives pour soutenir vos projets.
+                                {language === "fr" ? apiCorps : apiBody}
                             </p>
                             <img className="icon-product" src="/illustration/api.svg"/>
                         </div>
                         <div className="wordpress">
-                            <h4>Développement WordPress : Création et personnalisation</h4>
+                            <h4>{language === "fr" ? wpTitre : wpTitle}</h4>
                             <p className="justify fixed-height">
-                                Offrez à votre site WordPress une solution unique. De la création complète à la mise à jour de votre site,
-                                en passant par le développement de plugins sur mesure, je mets mon expertise au service de vos projets.
-                                Que ce soit pour un blog, une boutique en ligne ou un site vitrine, 
-                                je vous propose des solutions optimisées pour vos besoins et vos objectifs.
+                                {language === "fr" ? wpCorps : wpBody}
                             </p>
                             <img className="icon-product" src="/illustration/wordpress.svg"/>
                         </div>
@@ -43,27 +37,17 @@ export default function Products(){
                         <h3>Enseignement</h3>
                         <div className="flex">
                             <div className="cours-dev">
-                                <h4>Cours de développement</h4>
+                                <h4>{language === "fr" ? devTitre : devTitle}</h4>
                                 <p className="justify">
-                                    Transmettez votre passion pour le développement à travers mes formations. 
-                                    Ces cours sont conçus pour répondre aux besoins spécifiques de chaque apprenant, 
-                                    qu'il soit débutant ou expérimenté. Grâce à une pédagogie adaptée, 
-                                    ils permettent d'acquérir des bases solides ou d'approfondir des concepts avancés. 
-                                    Couvrant aussi bien le développement web que logiciel,
-                                    avec des mises en pratique engageantes et concrètes.
+                                    {language === "fr" ? devCorps : devBody}
                                 </p>
                                 <img className="icon-product" src="/illustration/dev-class.svg"/>
 
                             </div>
                             <div className="cours-hyp">
-                                <h4>Cours d'hypnose</h4>
+                                <h4>{language === "fr" ? hypTitre : hypTitle}</h4>
                                 <p className="justify">
-                                    Offrez à vos élèves des cours d'hypnose à travers des modules courts et dynamiques.
-                                    Ces formations offrent une initiation approfondie, suffisante pour que les étudiants puissent
-                                    hypnotiser leurs proches ou même des inconnus. Engagantes et interactives, 
-                                    elles permettent de développer des compétences professionnelles précieuses telles que la 
-                                    capacité à se mettre en valeur, l’aisance à l’oral, et la maîtrise de ses peurs, 
-                                    le tout dans un cadre ludique inspiré du spectacle de rue.
+                                    {language === "fr" ? hypCorps : hypBody}
                                 </p>
                                 <img className="icon-product" src="/illustration/hyp-class.svg"/>
                             </div>
