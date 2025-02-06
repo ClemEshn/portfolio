@@ -7,14 +7,14 @@ interface LanguageContextType {
 
 export const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-// Define the props type for the provider
 interface LanguageProviderProps {
   children: ReactNode;
 }
 
-// Provider component
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
-  const [language, setLanguage] = useState<string>('fr');
+  const userLang = navigator.language;
+  const lang = userLang.indexOf('fr') > -1 ? 'fr' : 'en';
+  const [language, setLanguage] = useState<string>(lang);
 
   const toggleLanguage = () => {
     setLanguage((prevLang) => (prevLang === 'en' ? 'fr' : 'en'));
@@ -27,7 +27,6 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   );
 };
 
-// Custom hook to use the context with proper TypeScript safety
 export const useLanguage = (): LanguageContextType => {
   const context = useContext(LanguageContext);
   if (!context) {

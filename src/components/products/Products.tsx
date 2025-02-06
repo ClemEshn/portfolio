@@ -1,5 +1,5 @@
 import { useLanguage } from "../../context/LanguageContext"
-import { apiBody, apiCorps, apiTitle, apiTitre, creationSites, devBody, devCorps, devTitle, devTitre, frontBody, frontCorps, frontTitle, frontTitre, hypBody, hypCorps, hypTitle, hypTitre, webSiteCreation, wpBody, wpCorps, wpTitle, wpTitre } from "./ProductsText";
+import { apiBody, apiCorps, apiTitle, apiTitre, creationSites, devBody, devCorps, devTitle, devTitre, frontBody, frontCorps, frontTitle, frontTitle2, frontTitre, frontTitre2, hypBody, hypCorps, hypTitle, hypTitre, webSiteCreation, wpBody, wpCorps, wpTitle, wpTitre } from "./ProductsText";
 
 export default function Products(){
     const {language} = useLanguage();
@@ -11,7 +11,7 @@ export default function Products(){
                     <h3>{language === "fr" ? creationSites : webSiteCreation}</h3>
                     <div className="flex unflexMobile">
                         <div className="frontend">
-                            <h4>{language === "fr" ? frontTitre : frontTitle}</h4>
+                            <h4>{language === "fr" ? frontTitre : frontTitle} <br/> {language === "fr" ? frontTitre2 : frontTitle2}</h4>
                             <p className="justify fixed-height">
                                 {language === "fr" ? frontCorps : frontBody}
                             </p>

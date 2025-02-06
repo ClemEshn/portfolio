@@ -26,7 +26,7 @@ export default function Header() {
                     <a href='/CV_Clement_Eischen.pdf' target="_blank" rel="noopener noreferrer" className='links header-link '>
                         {language === "fr" ? cv : resume}
                     </a>
-                    <Button onClick={toggleLanguage}>
+                    <Button className="primary-color" onClick={toggleLanguage}>
                         {language === "fr" ? "FR" : "EN"}
                     </Button>
                 </Nav>
