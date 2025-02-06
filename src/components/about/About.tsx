@@ -1,26 +1,22 @@
 import { Button } from "react-bootstrap";
-
+import { useLanguage } from "../../context/LanguageContext";
+import {title, titre, texte, text, MeContacter, ContactMe} from "./AboutText";
 export default function About(){
+    const { language } = useLanguage();
     return (
         <div id="about" className="my-container">
             <div className="flex unflexMobile">
                 <div>
                     <h1>Clément Eischen</h1>
-                    <h2>Développeur web et formateur à Lyon</h2>
-                    <p>👋 Bienvenue sur mon portfolio ! Je suis un développeur web passionné 
-                        Diplômé en ingénierie informatique, j'ai à cœur de créer des solutions sur mesure et innovantes. 
-                        Avec une expertise en PHP, JavaScript, React, Node.js et bien d'autres, j'ai travaillé sur des 
-                        projets variés allant de sites web à des outils complexes de gestion et de reporting. En dehors du code, je partage mes 
-                        connaissances en enseignant et l'informatique ou l'hypnose. Découvrez ici 
-                        mon univers, mes projets et mon savoir-faire.
-                    </p>
+                    <h2>{language === "fr" ? titre : title}</h2>
+                    <p>{language === "fr" ? texte : text}</p>
                 </div>
                 <div className="center fullwidth">
                     <img className="img-me" src="/img.jpg"/>
                 </div>
             </div>
             <div className="center">
-                <a href="#contact"><Button className="primary-color">Me contacter</Button></a>
+                <a href="#contact"><Button className="primary-color">{language === "fr" ? MeContacter : ContactMe}</Button></a>
             </div>
         </div>
     )

@@ -1,8 +1,10 @@
-import { Nav, Navbar, NavbarBrand } from "react-bootstrap";
+import { Button, Nav, Navbar, NavbarBrand } from "react-bootstrap";
+import { useLanguage } from '../../context/LanguageContext';
 import './Header.scss'
+import { about, aPropos, projets, projects, cv, resume } from "./HeaderText";
 
 export default function Header() {
-
+    const { language, toggleLanguage } = useLanguage();
     return (
         <Navbar className="px-3 bg-body-tertiary sticky-top">
             <NavbarBrand>Clément Eischen</NavbarBrand>
@@ -10,20 +12,23 @@ export default function Header() {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="left">
                     <a href='#about' className='links header-link  '>
-                        A propos
+                        {language === "fr" ? aPropos : about}
                     </a>
                     <a href='#products' className='links header-link '>
                         Services
                     </a>
                     <a href='#projects' className='links header-link '>
-                        Projets
+                        {language === "fr" ? projets : projects}
                     </a>
                     <a href='#contact' className='links header-link '>
                         Contact
                     </a>
                     <a href='/CV_Clement_Eischen.pdf' target="_blank" rel="noopener noreferrer" className='links header-link '>
-                        CV
+                        {language === "fr" ? cv : resume}
                     </a>
+                    <Button onClick={toggleLanguage}>
+                        {language === "fr" ? "FR" : "EN"}
+                    </Button>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

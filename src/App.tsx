@@ -7,10 +7,11 @@ import Projects from './components/projects/Projects'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Socials from './components/socials/Socials'
 import FallingLeaves from './components/fallingLeaves/FallingLeaves'
-
+import { LanguageProvider } from './context/LanguageContext'
 function App() {
   return (
     <>
+      <LanguageProvider>
       <Header />
       <FallingLeaves />
       <Socials/>
@@ -18,6 +19,7 @@ function App() {
       <Products/>
       <Projects/>
       <Contact/>
+      </LanguageProvider>
     </>
   )
 }
