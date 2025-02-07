@@ -139,8 +139,14 @@ hr{
   .unflexMobile{
     display: inline;
   }
+  .justify-mob{
+    text-align: justify;
+  }
   .showAsHeaderMob{
     display: flex!important;
+  }
+  .hideDesktop{
+    display: block!important;
   }
   .socials{
     display: none;
@@ -181,4 +187,8 @@ hr{
       width: 28px!important;
     }
   }
+}
+
+.hideDesktop{
+  display: none;
 }

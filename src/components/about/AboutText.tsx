@@ -6,3 +6,6 @@ export const text = "👋 Welcome to my portfolio! I am a passionate web develop
 
 export const ContactMe = "Contact me";
 export const MeContacter = "Me contacter";
+
+export const getResume = "My resume";
+export const monCV = "Mon cv"
