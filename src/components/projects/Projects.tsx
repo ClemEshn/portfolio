@@ -14,13 +14,13 @@ export default function Projects() {
                         <p style={{ marginBottom: 0 }} className="justify nocenter">
                             {language === "fr" ? jukeCorps : jukeBody}
                         </p>
-                        <p className="techno">Node, React, TypeScript</p>
+                        <p className="techno">Node, React, TypeScript, WebSockets, chartJs</p>
                     </div>
                 </div>
                 <div className="vertical flex gapFlex unflexMobile mb20">
                     <img className="illu-project" src="/logo/stripe.svg" width="400px" height="250" alt="E-commerce Payment System" />
                     <div>
-                        <h3>{language === "fr" ? stripeTitre : stripeTitle}e</h3>
+                        <h3>{language === "fr" ? stripeTitre : stripeTitle}</h3>
                         <p style={{ marginBottom: 0 }} className="justify nocenter">
                             {language === "fr" ? stripeCorps : stripeBody}
                         </p>
