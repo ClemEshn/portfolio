@@ -3,7 +3,7 @@ export const creationSites = "Création de sites internet";
 
 export const frontTitle = "Front-end creation (User interface)";
 export const frontTitle2 = "(User interface)";
-export const frontBody = "Bring your vision to life with a modern and intuitive user interface. Whether it's a website, an application, or an interactive tool, I design and develop user-centered interfaces. By leveraging cutting-edge technologies like React, I ensure that your projects are visually appealing, high-performing, and perfectly tailored to your needs.";
+export const frontBody = "Bring your vision to life with a modern and intuitive user interface. Whether it's a website, an application, or an interactive tool, I design and develop user-centered interfaces. By leveraging modern technologies like React, I ensure that your projects are visually appealing, high-performing, and perfectly tailored to your needs.";
 export const frontTitre = "Création du front-end";
 export const frontTitre2= "(Interface utilisateur)";
 export const frontCorps = "Donnez vie à votre vision grâce à une interface utilisateur moderne et intuitive. Que ce soit pour un site web, une application ou un outil interactif, je conçois et développe des interfaces centrées sur l'expérience utilisateur. Utilisant les technologies en vogue comme React, je m’assure que vos projets soient esthétiques, performants et parfaitement adaptés à vos besoins.";
