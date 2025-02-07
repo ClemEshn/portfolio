@@ -33,9 +33,9 @@ export default function Products(){
                             <img className="icon-product" src="/illustration/wordpress.svg"/>
                         </div>
                     </div>
-                    <div className="enseignement center">
+                    <div className="enseignement center ">
                         <h3>Enseignement</h3>
-                        <div className="flex">
+                        <div className="flex unflexMobile">
                             <div className="cours-dev">
                                 <h4>{language === "fr" ? devTitre : devTitle}</h4>
                                 <p className="justify">
