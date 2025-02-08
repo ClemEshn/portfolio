@@ -1,11 +1,11 @@
-export const titre = "Développeur web et formateur à Lyon";
-export const title = "Web developer and computer science teacher in Lyon";
+export const titre = "Développeur web freelance et formateur à Lyon";
+export const title = "Freelance web developer and computer science teacher in Lyon";
 
-export const texte = "👋 Bienvenue sur mon portfolio! Je suis un développeur web passionné. Diplômé en ingénierie informatique, j'ai à cœur de créer des solutions sur mesure et innovantes. Avec une expertise en JavaScript (et typescript), React, Node.js, PHP et bien d'autres, j'ai travaillé sur des projets variés allant de sites web à des outils complexes de gestion et de reporting. En dehors du code, je partage mes connaissances en enseignant et l'informatique ou l'hypnose. Découvrez ici mon univers, mes projets et mon savoir-faire.";
-export const text = "👋 Welcome to my portfolio! I am a passionate web developer with a degree in software engineering, dedicated to creating tailor-made and innovative solutions. With expertise in JavaScript (and typescript), React, Node.js, PHP and more, I have worked on a variety of projects ranging from websites to complex management and reporting tools. Beyond coding, I share my knowledge by teaching both computer science and hypnosis. Explore my world, my projects, and my expertise right here.";
+export const texte = "👋 Bienvenue sur mon portfolio! Je suis un développeur web freelance passionné basé à Lyon. Diplômé en ingénierie informatique, je crée des solutions sur mesure et innovantes pour entreprises et entrepreneurs. Spécialiste en JavaScript (et TypeScript), React, Node.js, PHP et bien d'autres technologies, j'accompagne mes clients dans la création de sites web performants, d'applications web et d'outils de gestion avancés. En plus du développement, je partage mes connaissances en tant que formateur en informatique et en hypnose. Vous recherchez un développeur web indépendant à Lyon ? Découvrez ici mon expertise et mes projets.";
+export const text = "👋 Welcome to my portfolio! I am a passionate freelance web developer based in Lyon with a degree in software engineering. I specialize in creating tailor-made and innovative solutions for businesses and entrepreneurs. With expertise in JavaScript (and TypeScript), React, Node.js, PHP, and more, I help clients build high-performance websites, web applications, and advanced management tools. Beyond coding, I share my knowledge as a computer science and hypnosis teacher. Are you looking for a freelance web developer in Lyon? Explore my world, my projects, and my expertise right here.";
 
 export const ContactMe = "Contact me";
 export const MeContacter = "Me contacter";
 
 export const getResume = "My resume";
-export const monCV = "Mon cv"
+export const monCV = "Mon CV"
